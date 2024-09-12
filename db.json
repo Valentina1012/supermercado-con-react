@@ -1,0 +1,28 @@
+{
+    "productos":[
+        {
+            "id": "1",
+            "urlImg": "",
+            "name": "Café Arlistan Suave",
+            "category": "bebida"
+        },
+        {
+            "id": "2",
+            "urlImg": "",
+            "name": "Galletitas Chocolinas",
+            "category": "almacen"
+        },
+        {
+            "id": "3",
+            "urlImg": "",
+            "name": "Galletitas Oreo",
+            "category": "almacen"
+        },
+        {
+            "id": "4",
+            "urlImg": "",
+            "name": "Sense Caramel",
+            "category": "bebida"
+        }
+    ]
+}
