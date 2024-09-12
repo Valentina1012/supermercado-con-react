@@ -25,13 +25,13 @@ export function Header({ filter, handle, cart }) {
                 <Carrito cart={cart}/>
              </section>
 
-            <section className={activeMenu} >
-                <div className="menu_container" onClick={handleMenu}>Menu<span className="material-symbols-outlined"> menu</span></div>
+            <section className={activeMenu} onClick={handleMenu} >
+                <div className="menu_container" >Menu</div>
                 <ul className='list-items'>
-                    <li className={activeItem} id="bebida" onClick={handle}>Bebidas</li>
-                    <li className={activeItem} id="lacteo" onClick={handle}>Lacteos</li>
-                    <li className={activeItem} id="frutas-verduras" onClick={handle}>Frutas y verduras</li>
-                    <li className={activeItem} id="almacen" onClick={handle}>Almacen</li>
+                    <li className={activeItem} id="bebida" onClick={handle}><span className="material-symbols-outlined">wine_bar</span>Bebidas</li>
+                    <li className={activeItem} id="lacteo" onClick={handle}><span className="material-symbols-outlined">grocery</span>Lacteos</li>
+                    <li className={activeItem} id="frutas-verduras" onClick={handle}><span className="material-symbols-outlined">nutrition</span>Frutas y verduras</li>
+                    <li className={activeItem} id="almacen" onClick={handle}><span className="material-symbols-outlined">cookie</span>Almacen</li>
                 </ul> 
             </section>
         </div>
