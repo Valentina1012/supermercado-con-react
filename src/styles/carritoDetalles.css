@@ -1,0 +1,10 @@
+.cart-detail {
+    font-weight: lighter;
+    display: flex;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.precio {
+    padding-left: 4px;
+}

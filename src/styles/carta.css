@@ -1,0 +1,37 @@
+.carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.carta img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.carta-carrito {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 1.5em;
+    padding: 4px 0;
+    background: #ececec;
+    outline: none;
+    border-radius: 4px;
+}
+
+.add-cart {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.carta input[type="number"] {
+    width: 6em;
+    height: 1.5em;
+    outline: none;
+}

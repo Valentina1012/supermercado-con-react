@@ -1,0 +1,60 @@
+[
+    {
+    "id": "1",
+    "urlImg": "https://chitarroni.com.ar/images/product_image/26/0?dpr=2.625&fit=crop&h=520&q=80&version=c18f5&w=400",
+    "name": "Café Arlistan Suave",
+    "price": "3000",
+    "category": "bebida"
+    },
+    {
+    "id": "2",
+    "urlImg": "https://forexport.tradicionesargentinas.com/wp-content/uploads/2020/06/IMG_6294-scaled.jpg",
+    "name": "Galletitas Chocolinas",
+    "price": "2540",
+    "category": "almacen"
+    },
+    {
+    "id": "3",
+    "urlImg": "https://masonlineprod.vtexassets.com/arquivos/ids/316379/Galletitas-Oreo-Regular-Tripack-354g-2-42387.jpg?v=638441589752030000",
+    "name": "Galletitas Oreo",
+    "price": "2863",
+    "category": "almacen"
+    },
+    {
+    "id": "4",
+    "urlImg": "https://jumboargentina.vtexassets.com/arquivos/ids/774030/Bebida-Lactea-Ls-Sense-Caramel-Brik-1l-1-873355.jpg?v=638146534071670000",
+    "name": "Sense Caramel",
+    "price": "4120",
+    "category": "bebida"
+    },
+    {
+    "id": "5",
+    "urlImg": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3270243_f.jpg",
+    "name": "Queso sardo La Paulina",
+    "price": "4230",
+    "category": "lacteo"
+    },
+    {
+    "id": "6",
+    "urlImg": "https://dcdn.mitiendanube.com/stores/001/108/127/products/la-serenisima-sachet-3byb1-33186a4d691a3c889515960551272959-640-0.png",
+    "name": "Leche La Serenísima",
+    "price": "3115",
+    "category": "lacteo"
+    },
+    {
+    "id": "7",
+    "urlImg": "https://regionnet.com.ar/wp-content/uploads/2022/07/mandarina-tipos-compra-cocina-xl-668x400x80xX.jpg",
+    "name": "1 kilo de Mandarina",
+    "price": "3026",
+    "category": "frutas-verduras"
+        
+    },
+    {
+    "id": "8",
+    "urlImg": "https://tumercadoperu.com/wp-content/uploads/2021/07/lechuga-seda-tumercado.jpeg",
+    "name": "Lehuga criolla 1 unidad",
+    "price": "2450",
+    "category": "frutas-verduras"
+        
+    }
+]
