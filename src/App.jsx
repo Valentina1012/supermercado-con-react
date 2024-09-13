@@ -6,6 +6,7 @@ import { Productos } from './components/Productos.jsx'
 import { Footer } from './components/Footer.jsx'
 import productosJSON from './productos.json'
 import { Menu } from './components/Menu.jsx'
+import { Toaster } from 'sonner'
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
     <>
       <Header filter={handleFilter} handle={(e) => { handleMenu(e) }} cart={carrito} />
       <Menu />
+      <Toaster richColors position='bottom-right'/>
       <Productos list={productsToShow} handleCarrito={(e) => { handleProdCarrito(e) }} />
       <Footer />
     </>
