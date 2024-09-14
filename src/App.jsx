@@ -14,6 +14,7 @@ function App() {
   const [prodToSearch, setProdToSearch] = useState('')
   const [showAll, setShowAll] = useState(true)
   const [carrito, setCarrito] = useState([])
+  const [totalCarrito, setTotalCarrito] = useState(0)
 
   function capitalizeText(str) {
     const strModified = str.toLowerCase()
@@ -48,15 +49,27 @@ function App() {
     } else {
       setCarrito([...carrito, productoBuscado])
     }
+    console.log(carrito)
+    setTotalCarrito(totalCarrito + productoBuscado.cantidad * productoBuscado.price) // Seteo el total a pagar dentro del carrito
+  }
+
+  const handleCleanCart = () => {
+    setTotalCarrito(0)
+    setCarrito([])
+  }
+
+  const handleMostrarTodos = () => {
+    setProductos(productosJSON)
   }
 
   const productsToShow = showAll ? productos : productos.filter(p => p.name.includes(capitalizeText(prodToSearch)))
+
   return (
     <>
-      <Header filter={handleFilter} handle={(e) => { handleMenu(e) }} cart={carrito} />
+      <Header filterSearch={handleFilter} optionsMenu={(e) => { handleMenu(e) }} allProducts={() => handleMostrarTodos()}cart={carrito} totalCart={totalCarrito} cleanCart={() => handleCleanCart()}/>
       <Menu />
       <Toaster richColors position='bottom-right'/>
-      <Productos list={productsToShow} handleCarrito={(e) => { handleProdCarrito(e) }} />
+      <Productos list={productsToShow} handleCart={(e) => { handleProdCarrito(e) }} />
       <Footer />
     </>
   )
