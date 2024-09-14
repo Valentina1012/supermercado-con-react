@@ -1,7 +1,7 @@
-import bebidas from '../imagenes/bebidas.jpg'
-import frutasYverduras from '../imagenes/frutas-verduras.jpg'
-import lacteos from '../imagenes/lacteos.jpg'
-import almacen from '../imagenes/almacen.jpg'
+import bebidas from '../imagenes/bebidas.webp'
+import frutasYverduras from '../imagenes/frutas-verduras.webp'
+import lacteos from '../imagenes/lacteos.webp'
+import almacen from '../imagenes/almacen.webp'
 import '../styles/categorias.css'
 
 export function Menu() {

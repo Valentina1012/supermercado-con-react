@@ -16,7 +16,6 @@ export function Carrito({ cart, totalCart, cleanTotal}) {
     return (
         <aside className="shop-cart">
             <div className={activeCart} onClick={handleListCart}>Mi Carrito<span className="material-symbols-outlined">shopping_cart</span>
-               
             </div>
             <div className={activeDetails}>
                 <ul className='cart-list'>

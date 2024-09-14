@@ -56,3 +56,13 @@
 .h2-categorias {
     padding: 0 30px;
 }
+
+@media screen and (max-width: 750px) {
+    .menu-categorias {
+        width: 85%;
+    }
+
+    .cat-img:hover {
+        filter: none;
+    }
+}
