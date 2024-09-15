@@ -157,7 +157,8 @@
 
 @media screen and (max-width: 750px) {
     .nav_superior {
-        width: 100%;
+        width: 100vw;
+        margin: 0;
     }
     
     .nav_utilities {
@@ -165,21 +166,35 @@
         height: 7em;
         padding-top: 14px;
         padding-bottom: 0;
+        flex-direction: column;
         justify-content: flex-end;
+        position: relative;
     }
 
     .menu_navigation, .menu_navigation.open {
         left: 0;
     }
 
+    .menu_navigation {
+        margin-top: 10px;
+    }
     .menu_navigation.open {
-        top: 2%;
+        top: 0;
     }
     
     .nav_utilities {
         gap: 2px;
     }
+
+    .search_bar {
+        min-width: 50%;
+        position: absolute;
+        top: 17px;
+        left: 45%;
+    }
+
     .search_bar input {
-        width: 12em;
+        padding: 6px 0 6px 10px;
+        width: 10em;
     }
 }

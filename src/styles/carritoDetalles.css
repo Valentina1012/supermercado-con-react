@@ -3,8 +3,24 @@
     display: flex;
     gap: 5px;
     padding: 5px 10px;
+    width: 90%;
 }
 
 .precio {
-    padding-left: 4px;
+    display: flex;
+    padding: 0 14px;
+}
+
+.title {
+    flex: 2;
+} 
+
+@media screen and (max-width: 750px) {
+    .title {
+        flex: 2;
+    }
+
+    .precio {
+        padding: 0;
+    }
 }

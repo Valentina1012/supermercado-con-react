@@ -1,13 +1,10 @@
-import './App.css'
 import { useState } from 'react'
 import { Header } from './components/Header.jsx'
-// import { Menu } from './components/Menu.jsx'
 import { Productos } from './components/Productos.jsx'
 import { Footer } from './components/Footer.jsx'
-import productosJSON from './productos.json'
 import { Menu } from './components/Menu.jsx'
 import { Toaster } from 'sonner'
-
+import productosJSON from './productos.json'
 
 function App() {
   const [productos, setProductos] = useState(productosJSON)

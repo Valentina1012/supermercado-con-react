@@ -1,3 +1,7 @@
+.seccion-menu {
+    padding-top: 10px;
+}
+
 .menu-categorias {
     width: 60%;
     margin: 0 auto;
@@ -64,5 +68,14 @@
 
     .cat-img:hover {
         filter: none;
+    }
+
+    .cat-texto {
+        position: absolute;
+        width: fit-content;
+        border-radius: 8px;
+        padding: 4px;
+        top: 5px;
+        left: 10px;
     }
 }
