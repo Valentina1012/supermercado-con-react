@@ -17,13 +17,13 @@ export function Header({ filterSearch, optionsMenu, allProducts, cart, totalCart
                         </div>
                         
                         <ul className='link-child'>
-                            <li className="flex items-center gap-2 text-white w-36 hover:text-lime-300 cursor-pointer lg:w-40 pb-4" onClick={allProducts}><p className='flex-1'>Todos los productos</p> <span className="material-symbols-outlined">arrow_forward_ios</span> </li>
+                            <li className="flex items-center gap-2 text-white w-36 hover:text-lime-300 cursor-pointer lg:w-40 pb-5" onClick={allProducts}><p className='flex-1'>Todos los productos</p> <span className="material-symbols-outlined">arrow_forward_ios</span> </li>
 
-                            <li className="flex items-center gap-2 text-white w-36  hover:text-lime-300 cursor-pointer lg:w-40 pb-2" id="bebida" onClick={optionsMenu}><span className="material-symbols-outlined">wine_bar</span><p className='flex-1'>Bebidas</p> <span className="material-symbols-outlined" >arrow_forward_ios</span> </li>
+                            <li className="flex items-center gap-2 text-white w-36  hover:text-lime-300 cursor-pointer lg:w-40 pb-3" id="bebida" onClick={optionsMenu}><span className="material-symbols-outlined">wine_bar</span><p className='flex-1'>Bebidas</p> <span className="material-symbols-outlined" >arrow_forward_ios</span> </li>
 
-                            <li className="flex items-center gap-2 text-white w-36  hover:text-lime-300 cursor-pointer lg:w-40 pb-2" id="lacteo" onClick={optionsMenu}><span className="material-symbols-outlined">grocery</span><p className='flex-1'>Lacteos</p> <span className="material-symbols-outlined">arrow_forward_ios</span> </li>
+                            <li className="flex items-center gap-2 text-white w-36  hover:text-lime-300 cursor-pointer lg:w-40 pb-3" id="lacteo" onClick={optionsMenu}><span className="material-symbols-outlined">grocery</span><p className='flex-1'>Lacteos</p> <span className="material-symbols-outlined">arrow_forward_ios</span> </li>
 
-                            <li className="flex items-center gap-2 text-white w-36  hover:text-lime-300 cursor-pointer lg:w-40 pb-2" id="frutas-verduras" onClick={optionsMenu}><span className="material-symbols-outlined">nutrition</span><p className='flex-1'>Frutas y Verduras</p><span className="material-symbols-outlined">arrow_forward_ios</span> </li>
+                            <li className="flex items-center gap-2 text-white w-36  hover:text-lime-300 cursor-pointer lg:w-40 pb-3" id="frutas-verduras" onClick={optionsMenu}><span className="material-symbols-outlined">nutrition</span><p className='flex-1'>Frutas y Verduras</p><span className="material-symbols-outlined">arrow_forward_ios</span> </li>
 
                             <li className="flex items-center gap-2 text-white w-36  hover:text-lime-300 cursor-pointer lg:w-40" id="almacen" onClick={optionsMenu}><span className="material-symbols-outlined">cookie</span><p className='flex-1'>Almacen</p> <span className="material-symbols-outlined">arrow_forward_ios</span> </li>
                         </ul>

@@ -14,7 +14,7 @@ export function Carta(props) {
         <div className="flex-1 py-1 pl-4">{`$ ${props.price}`}</div>
         <form className="flex items-center py-5 px-2 sm:p-5" onSubmit={props.click}>
           <input className="w-20 h-7 mr-3 outline-none bg-gray-200 rounded-md px-2 sm:w-24" id="cantidad" type="number" placeholder='0' />
-          <button type="submit" className="flex items-center hover:bg-lime-600 bg-emerald-700 text-white border-none w-16" id={props.id} onClick={() => toast.success('Producto agregado al carrito')}>
+          <button type="submit" className="flex items-center justify-center hover:bg-lime-600 bg-emerald-700 text-white border-none w-fit" id={props.id} onClick={() => toast.success('Producto agregado al carrito')}>
             Añadir
           </button>
         </form>
