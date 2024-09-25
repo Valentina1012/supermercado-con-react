@@ -30,7 +30,7 @@ function App() {
 
   const handleProdCarrito = (e) => {
     e.preventDefault()
-    const id = e.target.querySelector(".carta-carrito").id
+    const id = e.target.getElementsByTagName("button")[0].id
     let cantidad = e.target.querySelector('#cantidad').value
     let productoBuscado = Object.create(productos.filter((prod) => prod.id == id)[0]);
     productoBuscado.cantidad = Number(cantidad)
@@ -46,7 +46,6 @@ function App() {
     } else {
       setCarrito([...carrito, productoBuscado])
     }
-    console.log(carrito)
     setTotalCarrito(totalCarrito + productoBuscado.cantidad * productoBuscado.price) // Seteo el total a pagar dentro del carrito
   }
 
@@ -63,9 +62,9 @@ function App() {
 
   return (
     <>
-      <Header filterSearch={handleFilter} optionsMenu={(e) => { handleMenu(e) }} allProducts={() => handleMostrarTodos()}cart={carrito} totalCart={totalCarrito} cleanCart={() => handleCleanCart()}/>
+      <Header filterSearch={handleFilter} optionsMenu={(e) => { handleMenu(e) }} allProducts={() => handleMostrarTodos()} cart={carrito} totalCart={totalCarrito} cleanCart={() => handleCleanCart()}/>
       <Menu />
-      <Toaster richColors position='bottom-right'/>
+      <Toaster richColors position='bottom-right' />
       <Productos list={productsToShow} handleCart={(e) => { handleProdCarrito(e) }} />
       <Footer />
     </>

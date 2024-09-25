@@ -1,3 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .list-parent {
+    @apply grid grid-rows-[max-content_0fr] overflow-hidden transition-[grid-template-rows] cursor-pointer gap-4 data-[toggle]:grid-rows-[max-content_1fr]
+    bg-emerald-900 pt-3 px-3 absolute rounded-lg w-full;
+  }
+
+  .link-child {
+    @apply overflow-hidden ml-4;
+  }
+
+  [data-toggle]:has( > [data-dropdown]) {
+    @apply pb-6 w-52 h-fit;
+  }
+
+  [data-parent] [data-toggle] {
+    @apply pb-6 w-80;
+  }
+  
+ [data-parent]:has( > [data-toggle]) {
+    @apply h-20;
+  }
+
+  [data-toggle] [data-firstline] {
+    @apply transition-transform rotate-45 translate-y-1;
+  }
+
+  [data-toggle] [data-lastline] {
+    @apply transition-transform rotate-minus45 translate-y-1 shadow-iconMenuClosed;
+  }
+
+  .img-prod {
+    @apply relative w-full h-64 object-cover rounded-t-lg cursor-pointer;
+  }
+
+}
+
 :root {
   font-family: Rubik, Inter, system-ui, Arial, sans-serif;
   line-height: 1.2;
@@ -18,15 +58,11 @@ a {
   color: #D2DA3A;
   text-decoration: inherit;
 }
-a:hover {
-  color: #D2DA3A;
-}
 
 body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  width: 100%;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -54,9 +90,11 @@ button:hover {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
